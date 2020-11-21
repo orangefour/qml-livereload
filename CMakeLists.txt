@@ -1,3 +1,3 @@
-find_package(Qt5 COMPONENTS Quick REQUIRED)
+find_package(Qt5 COMPONENTS Concurrent Quick REQUIRED)
 add_executable(qmllive main.cpp)
-qt5_use_modules(qmllive Concurrent Quick)
+target_link_libraries(qmllive Qt::Concurrent Qt::Quick)
